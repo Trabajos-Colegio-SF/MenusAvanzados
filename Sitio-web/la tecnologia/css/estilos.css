@@ -20,7 +20,7 @@ header { width: 950px;           /*ancho*/
 header h1 { text-align: center;  				/* alinear el texto al centro */
 			color: white;		 				/* color de fuente a blanco */
 			line-height: 100px; 				/*centra el texto verticalmente*/
-			font-family: 'Lobster', cursive;  	/* tipo de fuente */
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;	/* tipo de fuente */
 			font-size: 36px;					/* tamaño de fuente */
 			text-shadow: 2px 2px 4px #000000;   /* sombra de la fuente */
 }
@@ -30,7 +30,7 @@ nav { text-align: center;						/* centra el texto */
 	  }
 
 nav li { 
-	line-height: 3rem;
+	line-height: 2rem;
 	position: relative;
 }
 
@@ -72,7 +72,7 @@ nav > ul > li {
 
 nav li li {
 	background-color: #343642;
-	width: 200px;
+	width: 300px;
 }
 
 nav > ul > li > ul {
@@ -90,7 +90,7 @@ nav ul li a { text-decoration: none;			/* quitar el subrayado de los enlaces */
 			  text-shadow: 2px 2px 4px #000000;	/* colocar una sombra a la fuente */
 			}		
 			
-nav ul li a:hover{ color: #000000;		/* cada vez que pasemos el mouse sobre cualquier enlace del nav cambiar*/
+nav ul li a:hover{ color: #FFAA00;		/* cada vez que pasemos el mouse sobre cualquier enlace del nav cambiar*/
 					}
 
 nav ul li a span {
@@ -98,15 +98,27 @@ nav ul li a span {
 }
 
 section { width: 750px;			/* ancho del section */
-		  height: 450px;		/* alto del section */
+		  height: 430px;		/* alto del section */
 		  background: white;	/* color de fondo */
 		  float: left;
 		  margin-top: 10px;		/*agrega un margen de 10px en la parte superior */
 		  box-shadow: 0px 5px #000000; 
+		  overflow-y: scroll;
+		  
 		}
-			
+section ul{
+	list-style: none;
+}
+
+article {
+	padding: 5px 10px 0px 15px;
+}
+article li{
+	margin-bottom: 15px;
+	margin-top: 2px;
+}
 aside { width: 185px;		/* ancho del aside */
-	    height: 400px;		/* alto del aside */
+	    height: 380px;		/* alto del aside */
 	    background: white;	/* color de fondo */
 		float: left;
 		margin-top: 5px;
@@ -118,6 +130,12 @@ aside { width: 185px;		/* ancho del aside */
 aside:nth-of-type(1){ height: 35px;
 					  background: #dddddd; 	 /* también dar el mismo fondo del body */
 					}	
+
+aside .tecno{
+	width: 100%;
+	margin-bottom: 6px;
+	margin-top: 2px;
+}
 							
 footer { clear: both; /* Esta propiedad lo que hace es que a partir del footer no permitir elementos flotantes ni a izq ni a der */
 		 width: 950px;	/* ancho del footer */
