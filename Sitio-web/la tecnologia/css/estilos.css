@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { margin: 0;
+	padding: 0;
+  }
+  
+body { background:#dddddd;
+}
+
+#contenido { width: 950px;  /* ancho del div */
+			 margin: auto;  /* margin en auto, para centrar el div*/
+}
+
+header { width: 950px;           /*ancho*/
+		 height: 100px;			 /*alto */
+		 background: #990000;	 /* color de fondo */
+}
+
+header h1 { text-align: center;  				/* alinear el texto al centro */
+			color: white;		 				/* color de fuente a blanco */
+			line-height: 100px; 				/*centra el texto verticalmente*/
+			font-family: 'Lobster', cursive;  	/* tipo de fuente */
+			font-size: 36px;					/* tamaño de fuente */
+			text-shadow: 2px 2px 4px #000000;   /* sombra de la fuente */
+}
+
+nav { text-align: center;						/* centra el texto */
+	  background: #E0E0E0;						/* color de fondo */
+	  }
+
+nav li { 
+	line-height: 3rem;
+	position: relative;
+}
+
+nav li ul {
+    position:absolute;
+}
+
+nav a { 
+	color: #ddd;
+	display :block;
+	padding :0 1em;
+	text-decoration :none;
+	font-size: 14px;
+	transition: .4s;
+}
+	
+nav a:hover { 
+	background-color: rgba(0,0,0,.5);
+	color: #348899;
+}
+
+nav li ul {
+	display: none;
+}
+
+nav li:hover > ul {
+	display: block;
+}
+
+nav > ul {
+	background-color: #343642;
+	display: table;
+	width: 100%;
+}
+
+nav > ul > li {
+	float: left;
+}
+
+nav li li {
+	background-color: #343642;
+	width: 200px;
+}
+
+nav > ul > li > ul {
+	top:100%;
+}
+
+nav ul li { display: inline-block;				/* colocar los items del menú en una sóla línea */
+			padding: 10px;						/*separar los items el menu de navegación */
+		}	  
+
+nav ul li a { text-decoration: none;			/* quitar el subrayado de los enlaces */
+			  font-family: verdana;				/* cambiar el tipo de fuente a Verdana */
+			  font-size: 20px;					/* cambiar el tamaño de la fuente */
+			  color: white;						/* cambiar el color de la fuente a blanco */
+			  text-shadow: 2px 2px 4px #000000;	/* colocar una sombra a la fuente */
+			}		
+			
+nav ul li a:hover{ color: #000000;		/* cada vez que pasemos el mouse sobre cualquier enlace del nav cambiar*/
+					}
+
+nav ul li a span {
+	margin-right: 5px;
+}
+
+section { width: 750px;			/* ancho del section */
+		  height: 450px;		/* alto del section */
+		  background: white;	/* color de fondo */
+		  float: left;
+		  margin-top: 10px;		/*agrega un margen de 10px en la parte superior */
+		  box-shadow: 0px 5px #000000; 
+		}
+			
+aside { width: 185px;		/* ancho del aside */
+	    height: 400px;		/* alto del aside */
+	    background: white;	/* color de fondo */
+		float: left;
+		margin-top: 5px;
+		margin-left: 15px;
+		box-shadow: 0px 5px #000000;
+		margin-bottom: 15px;	/*separar aside */
+	}		
+	
+aside:nth-of-type(1){ height: 35px;
+					  background: #dddddd; 	 /* también dar el mismo fondo del body */
+					}	
+							
+footer { clear: both; /* Esta propiedad lo que hace es que a partir del footer no permitir elementos flotantes ni a izq ni a der */
+		 width: 950px;	/* ancho del footer */
+		 height: 30px;	/* alto del footer */
+		 background: #FFAA00; /* color de fondo (color traido del tema de adobe color) */
+		 text-align: center; /* centrar el texto horizontalmente */
+		 font-style: italic; 
+		 color: white;		/* color de fuente blanco */
+		 line-height: 30px; /* sirve para centrar el texto verticalmente. Debe tener el mismo valor del height (alto) */
+		}
